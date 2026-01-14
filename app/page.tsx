@@ -1,3 +1,9 @@
+"use client";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { useTranslation } from "@/lib/i18n";
+
 export default function Home() {
-  return <div>MINJ hotel</div>;
+  const { language } = useLanguage();
+  const t = useTranslation(language);
+  return <div>{t.aboutSubtitle}</div>;
 }
