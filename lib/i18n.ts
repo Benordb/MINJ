@@ -9,11 +9,31 @@ export const translations = {
     contact: "Contact",
     bookNow: "Book Now",
 
-    // Home Page
-    heroTitle: "Experience Luxury\nLike Never Before",
-    heroSubtitle:
-      "Discover elegant rooms, world-class service, and unforgettable moments at Le Grand Hotel.",
-    checkAvailability: "Check Availability",
+    // Hero Section
+    premiumHotel: "PREMIUM HOTEL EXPERIENCE",
+    heroTitleLine1: "Experience",
+    heroTitleLine2: "Luxury Like Never Before",
+    bookYourStay: "Book Your Stay",
+    viewRooms: "View Rooms",
+
+    // Footer
+    footerDescription:
+      "Experience refined luxury and exceptional hospitality with us.",
+    navigation: "Navigation",
+    followUs: "Follow us",
+    address: "Ulaanbaatar, Mongolia",
+    allRightsReserved: "All rights reserved.",
+    madeWithLove: "Made with love ❤️",
+
+    // Amenities
+    hotelAmenities: "Hotel Amenities",
+    amenitiesDesc: "Everything you need for a perfect stay",
+    freeWifi: "Free WiFi",
+    parking: "Parking",
+    breakfast: "Breakfast",
+    fitnessCenter: "Fitness Center",
+    restaurant: "Restaurant",
+
     checkIn: "Check In",
     checkOut: "Check Out",
     guests: "Guests",
@@ -23,14 +43,6 @@ export const translations = {
     featuredRoomsDesc:
       "Discover our carefully curated selection of rooms designed for your comfort and relaxation.",
     viewAllRooms: "View All Rooms",
-    hotelAmenities: "Hotel Amenities",
-    amenitiesDesc: "Everything you need for a perfect stay",
-    freeWifi: "Free WiFi",
-    parking: "Parking",
-    breakfast: "Breakfast",
-    spaWellness: "Spa & Wellness",
-    fitnessCenter: "Fitness Center",
-    restaurant: "Restaurant",
     whatGuestsSay: "What Our Guests Say",
     guestsDesc: "Real experiences from our valued guests",
     readyForLuxury: "Ready to Experience Luxury?",
@@ -106,7 +118,6 @@ export const translations = {
     contactTitle: "Contact Us",
     contactSubtitle:
       "We're here to help. Reach out to us for reservations, inquiries, or any assistance you may need.",
-    address: "Address",
     phone: "Phone",
     email: "Email",
     hours: "Hours",
@@ -153,11 +164,31 @@ export const translations = {
     contact: "Холбоо барих",
     bookNow: "Захиалах",
 
-    // Home Page
-    heroTitle: "Тансаг амралтыг\nӨмнө нь байгаагүй байдлаар",
-    heroSubtitle:
-      "Ле Гранд зочид буудалд дэгжин өрөө, дэлхийн чанарын үйлчилгээ, мартагдашгүй мөчүүдийг олж мэдээрэй.",
-    checkAvailability: "Сул байдал шалгах",
+    // Hero Section
+    premiumHotel: "ТАНСАГ ЗОЧИД БУУДАЛ",
+    heroTitleLine1: "Тансаг байдлыг",
+    heroTitleLine2: "Шинэ түвшинд мэдэр",
+    bookYourStay: "Өрөө захиалах",
+    viewRooms: "Өрөөнүүд үзэх",
+
+    // Footer
+    footerDescription:
+      "Тансаг зэрэглэлийн орчин, дээд зэргийн үйлчилгээ таныг хүлээж байна.",
+    navigation: "Цэс",
+    followUs: "Биднийг дагах",
+    address: "Алтай хот, Есөнбулаг сум",
+    allRightsReserved: "Бүх эрх хуулиар хамгаалагдсан.",
+    madeWithLove: "Монголд бүтээв 🇲🇳",
+
+    // Amenities
+    hotelAmenities: "Зочид буудлын үйлчилгээ",
+    amenitiesDesc: "Төгс амралтад шаардагдах бүх зүйл",
+    freeWifi: "Үнэгүй WiFi",
+    parking: "Зогсоол",
+    breakfast: "Өглөөний цай",
+    fitnessCenter: "Фитнесс төв",
+    restaurant: "Ресторан",
+
     checkIn: "Орох огноо",
     checkOut: "Гарах огноо",
     guests: "Зочид",
@@ -167,14 +198,7 @@ export const translations = {
     featuredRoomsDesc:
       "Таны тав тух, амрахад зориулж тусгайлан бэлтгэсэн өрөөнүүдийг нээж үзээрэй.",
     viewAllRooms: "Бүх өрөө харах",
-    hotelAmenities: "Зочид буудлын үйлчилгээ",
-    amenitiesDesc: "Төгс амралтад шаардагдах бүх зүйл",
-    freeWifi: "Үнэгүй WiFi",
-    parking: "Зогсоол",
-    breakfast: "Өглөөний цай",
-    spaWellness: "Спа & Сайн сайхан",
-    fitnessCenter: "Фитнесс төв",
-    restaurant: "Ресторан",
+
     whatGuestsSay: "Зочдын сэтгэгдэл",
     guestsDesc: "Манай үнэт зочдын бодит туршлага",
     readyForLuxury: "Тансаг амралт авахад бэлэн үү?",
@@ -249,7 +273,6 @@ export const translations = {
     contactTitle: "Холбоо барих",
     contactSubtitle:
       "Бид танд туслахад бэлэн байна. Захиалга, лавлагаа, ямар ч тусламжийн хүсэлтээр холбогдоорой.",
-    address: "Хаяг",
     phone: "Утас",
     email: "Имэйл",
     hours: "Цагийн хуваарь",

@@ -15,7 +15,7 @@ interface RoomCardProps {
 }
 
 export const RoomCard = ({
-  id,
+  // id,
   image,
   name,
   price,
