@@ -92,27 +92,24 @@ export const translations = {
     checkRates: "Check rates for longer stays",
 
     // About Page
-    aboutTitle: "About Le Grand",
+    aboutTitleLine1: "MINJ",
+    aboutTitleLine2: "Hotel",
     aboutSubtitle:
       "A legacy of luxury, comfort, and exceptional hospitality since 1999",
-    yearsOfExcellence: "Years of Excellence",
-    luxuryRooms: "Luxury Rooms",
-    guestSatisfaction: "Guest Satisfaction",
-    industryAwards: "Industry Awards",
-    ourStory: "Our Story",
-    ourMission: "Our Mission",
-    ourVision: "Our Vision",
-    ourValues: "Our Values",
-    valuesDesc: "The principles that guide everything we do",
-    excellence: "Excellence",
-    innovation: "Innovation",
-    sustainability: "Sustainability",
-    community: "Community",
-    leadershipTeam: "Leadership Team",
-    leadershipDesc:
-      "Meet the dedicated professionals behind Le Grand Hotel's success",
-    experienceLeGrand: "Experience Le Grand",
-    glimpseDesc: "A glimpse into our world of luxury",
+    visionTitle: "Our Vision",
+    visionText:
+      "To become a benchmark hotel that contributes meaningfully to the development of tourism in the western region.",
+    missionTitle: "Our Mission",
+    missionText:
+      "To deliver reliable, heartfelt service that provides every guest with comfort and quality.",
+    valuesTitle: "Our Values · 3C",
+    comfortTitle: "Comfort",
+    comfortDesc:
+      "Providing a clean, safe, and relaxing environment for every guest.",
+    careTitle: "Care",
+    careDesc: "Delivering sincere, attentive, and personalized hospitality.",
+    consistencyTitle: "Consistency",
+    consistencyDesc: "Maintaining consistent service quality and standards.",
 
     // Contact Page
     contactTitle: "Contact Us",
@@ -248,26 +245,23 @@ export const translations = {
     checkRates: "Урт хугацааны үнэ шалгах",
 
     // About Page
-    aboutTitle: "Ле Гранд-ын тухай",
+    aboutTitleLine1: "MINJ",
+    aboutTitleLine2: "Hotel",
     aboutSubtitle:
-      "1999 оноос хойш тансаг, тав тух, онцгой зочломтгой үйлчилгээний өв",
-    yearsOfExcellence: "Жилийн туршлага",
-    luxuryRooms: "Тансаг өрөө",
-    guestSatisfaction: "Зочдын сэтгэл ханамж",
-    industryAwards: "Салбарын шагнал",
-    ourStory: "Бидний түүх",
-    ourMission: "Бидний эрхэм зорилго",
-    ourVision: "Бидний алсын хараа",
-    ourValues: "Бидний үнэт зүйлс",
-    valuesDesc: "Бидний бүх үйл ажиллагааг удирддаг зарчмууд",
-    excellence: "Шилдэг байдал",
-    innovation: "Инноваци",
-    sustainability: "Тогтвортой байдал",
-    community: "Нийгэмлэг",
-    leadershipTeam: "Удирдлагын баг",
-    leadershipDesc: "Ле Гранд зочид буудлын амжилтын ард байгаа хүмүүс",
-    experienceLeGrand: "Ле Гранд туршлага",
-    glimpseDesc: "Тансаг ертөнц рүү нэг харц",
+      "1999 оноос хойш тансаг байдал, тав тух, онцгой зочломтгой байдлын өв уламжлал",
+    visionTitle: "Алсын хараа",
+    visionText:
+      "Баруун бүсийн аялал жуулчлалыг хөгжүүлэхэд бодит хувь нэмэр оруулсан, бүсийн жишиг зочид буудал болно.",
+    missionTitle: "Эрхэм зорилго",
+    missionText:
+      "Зочин бүрт тав тух, чанарыг мэдрүүлсэн найдвартай, чин сэтгэлийн үйлчилгээг хүргэнэ.",
+    valuesTitle: "Үнэт зүйлс",
+    comfortTitle: "Тав тух",
+    comfortDesc: "Зочин бүрт цэвэр, аюулгүй, тав тухтай орчныг бүрдүүлнэ.",
+    careTitle: "Халамж",
+    careDesc: "Чин сэтгэлээсээ, анхаарал халамжтай үйлчилгээ үзүүлнэ.",
+    consistencyTitle: "Тогтвортой чанар",
+    consistencyDesc: "Үйлчилгээний чанар, стандартыг тогтмол хадгална.",
 
     // Contact Page
     contactTitle: "Холбоо барих",

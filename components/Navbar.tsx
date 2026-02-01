@@ -15,7 +15,7 @@ export const Navbar = () => {
   const t = useTranslation(language);
 
   const navItems = [
-    { label: t.home, page: "home" as Page },
+    { label: t.home, page: "" as Page },
     { label: t.roomsAndSuites, page: "rooms" as Page },
     { label: t.aboutUs, page: "about" as Page },
     { label: t.contact, page: "contact" as Page },
@@ -37,7 +37,7 @@ export const Navbar = () => {
               {navItems.map((item) => (
                 <Link
                   key={item.page}
-                  href={`/#${item.page}`}
+                  href={`/${item.page}`}
                   className="text-sm text-white/80 hover:text-white transition"
                 >
                   {item.label}
@@ -83,7 +83,7 @@ export const Navbar = () => {
             {navItems.map((item) => (
               <Link
                 key={item.page}
-                href={`/#${item.page}`}
+                href={`/${item.page}`}
                 onClick={() => setMobileMenuOpen(false)}
                 className="text-2xl text-white"
               >
