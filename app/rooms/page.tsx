@@ -57,6 +57,7 @@ export default function Rooms() {
               description={room.description[language]}
               price={`₮${formatPrice(room.price)} ${t.perNight}`}
               image={room.images[0]}
+              size={room.size}
               guests={room.guests}
               guestLabel={room.guests === 1 ? t.guest : t.guests}
               detailsLabel={t.viewDetails}

@@ -45,6 +45,9 @@ export default function About() {
             <span className="block mt-2 bg-linear-to-r from-amber-300 via-yellow-200 to-amber-400 bg-clip-text text-transparent">
               {t.aboutTitleLine2}
             </span>
+            <span className="block mt-2 bg-linear-to-r from-amber-300 via-yellow-200 to-amber-400 bg-clip-text text-transparent">
+              {t.aboutTitleLine3}
+            </span>
           </h1>
 
           <p className="mt-5 max-w-xl text-sm lg:text-base text-white/75 leading-relaxed">

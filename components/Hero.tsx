@@ -4,10 +4,12 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "@/lib/i18n";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { useRouter } from "next/navigation";
 
 export const Hero = () => {
   const { language } = useLanguage();
   const t = useTranslation(language);
+  const router = useRouter();
 
   return (
     <section className="relative h-[90vh] min-h-96 overflow-hidden">
@@ -48,12 +50,16 @@ export const Hero = () => {
           <div className="flex items-center gap-4 pt-4">
             <Button
               size="lg"
+              onClick={() => router.push("/rooms")}
               className="bg-amber-400 text-black hover:bg-amber-300 shadow-xl px-8"
             >
               {t.bookYourStay}
             </Button>
 
-            <button className="text-white/90 underline underline-offset-4 hover:text-white">
+            <button
+              onClick={() => router.push("/rooms")}
+              className="text-white/90 underline underline-offset-4 hover:text-white"
+            >
               {t.viewRooms}
             </button>
           </div>

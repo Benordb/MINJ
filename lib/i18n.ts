@@ -96,6 +96,7 @@ export const translations = {
     // About Page
     aboutTitleLine1: "MINJ",
     aboutTitleLine2: "Hotel",
+    aboutTitleLine3: "",
     aboutSubtitle:
       "A legacy of luxury, comfort, and exceptional hospitality since 1999",
     visionTitle: "Our Vision",
@@ -251,7 +252,8 @@ export const translations = {
 
     // About Page
     aboutTitleLine1: "Минж",
-    aboutTitleLine2: "Зочид буудал",
+    aboutTitleLine2: "Зочид",
+    aboutTitleLine3: "буудал",
     aboutSubtitle:
       "1999 оноос хойш тансаг байдал, тав тух, онцгой зочломтгой байдлын өв уламжлал",
     visionTitle: "Алсын хараа",

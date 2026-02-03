@@ -1,6 +1,6 @@
 "use client";
 
-import { Users } from "lucide-react";
+import { Maximize, Users } from "lucide-react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
@@ -9,6 +9,7 @@ type RoomCardProps = {
   description: string;
   price: string;
   image: string;
+  size: string;
   guests?: number;
   guestLabel?: string;
   detailsLabel?: string;
@@ -20,6 +21,7 @@ export default function RoomCard({
   description,
   price,
   image,
+  size,
   guests = 1,
   guestLabel = "Зочин",
   detailsLabel = "Дэлгэрэнгүй",
@@ -51,11 +53,17 @@ export default function RoomCard({
       <div className="p-6 flex flex-col justify-between h-[calc(100%-192px)]">
         <div className="space-y-2">
           <h3 className="text-2xl font-serif">{title}</h3>
-          <div className="flex gap-2 items-center">
-            <Users className="w-4 h-4" />
-            <span>
-              {guests} {guestLabel}
-            </span>
+          <div className="flex gap-4">
+            <div className="flex gap-2 items-center">
+              <Users className="w-4 h-4" />
+              <span>
+                {guests} {guestLabel}
+              </span>
+            </div>
+            <div className="flex gap-2 items-center">
+              <Maximize className="w-4 h-4" />
+              <span>{size}</span>
+            </div>
           </div>
           <p className="text-zinc-600 text-sm leading-relaxed">{description}</p>
         </div>

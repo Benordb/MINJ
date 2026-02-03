@@ -115,7 +115,7 @@ export const SearchRoom = () => {
 
           <div className="flex items-center mt-4">
             <Button
-              onClick={() => router.push("/#rooms")}
+              onClick={() => router.push("/rooms")}
               className="bg-amber-400 text-black hover:bg-amber-300 shadow-xl w-full"
             >
               <Search className="w-5 h-5 mr-2 inline" />
