@@ -21,7 +21,7 @@ export const translations = {
       "Experience refined luxury and exceptional hospitality with us.",
     navigation: "Navigation",
     followUs: "Follow us",
-    address: "Ulaanbaatar, Mongolia",
+    address: "Govi-Altai, Mongolia",
     allRightsReserved: "All rights reserved.",
     madeWithLove: "Made with love ❤️",
 
@@ -55,7 +55,8 @@ export const translations = {
     viewDetails: "View Details",
 
     // Rooms Page
-    roomsPageTitle: "Rooms & Suites",
+    roomsPageTitle1: "Rooms",
+    roomsPageTitle2: "Suites",
     roomsPageDesc:
       "Choose from our selection of beautifully appointed rooms and suites, each designed to provide the ultimate in comfort and luxury.",
     filters: "Filters",
@@ -112,7 +113,8 @@ export const translations = {
     consistencyDesc: "Maintaining consistent service quality and standards.",
 
     // Contact Page
-    contactTitle: "Contact Us",
+    contactTitle1: "Contact",
+    contactTitle2: "Us",
     contactSubtitle:
       "We're here to help. Reach out to us for reservations, inquiries, or any assistance you may need.",
     phone: "Phone",
@@ -120,8 +122,8 @@ export const translations = {
     hours: "Hours",
     sendMessage: "Send Us a Message",
     fullName: "Full Name",
-    emailAddress: "Email Address",
-    phoneNumber: "Phone Number",
+    emailAddress: "minjhotel7@gmail.com",
+    phoneNumber: "+976 70489999",
     subject: "Subject",
     selectSubject: "Select a subject",
     message: "Message",
@@ -208,7 +210,8 @@ export const translations = {
     viewDetails: "Дэлгэрэнгүй",
 
     // Rooms Page
-    roomsPageTitle: "Өрөө & Люкс",
+    roomsPageTitle1: "Өрөө",
+    roomsPageTitle2: "Люкс",
     roomsPageDesc:
       "Тав тух, тансаг байдлыг хангахаар бүтээсэн гоёмсог өрөө, люксүүдээс сонгоорой.",
     filters: "Шүүлтүүр",
@@ -245,8 +248,8 @@ export const translations = {
     checkRates: "Урт хугацааны үнэ шалгах",
 
     // About Page
-    aboutTitleLine1: "MINJ",
-    aboutTitleLine2: "Hotel",
+    aboutTitleLine1: "Минж",
+    aboutTitleLine2: "Зочид буудал",
     aboutSubtitle:
       "1999 оноос хойш тансаг байдал, тав тух, онцгой зочломтгой байдлын өв уламжлал",
     visionTitle: "Алсын хараа",
@@ -264,7 +267,8 @@ export const translations = {
     consistencyDesc: "Үйлчилгээний чанар, стандартыг тогтмол хадгална.",
 
     // Contact Page
-    contactTitle: "Холбоо барих",
+    contactTitle1: "Холбоо",
+    contactTitle2: "барих",
     contactSubtitle:
       "Бид танд туслахад бэлэн байна. Захиалга, лавлагаа, ямар ч тусламжийн хүсэлтээр холбогдоорой.",
     phone: "Утас",
@@ -272,8 +276,8 @@ export const translations = {
     hours: "Цагийн хуваарь",
     sendMessage: "Мессеж илгээх",
     fullName: "Бүтэн нэр",
-    emailAddress: "Имэйл хаяг",
-    phoneNumber: "Утасны дугаар",
+    emailAddress: "minjhotel7@gmail.com",
+    phoneNumber: "+976 70489999",
     subject: "Сэдэв",
     selectSubject: "Сэдэв сонгох",
     message: "Мессеж",

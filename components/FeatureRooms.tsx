@@ -4,6 +4,8 @@ import { useTranslation } from "@/lib/i18n";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Button } from "./ui/button";
 import { useRouter } from "next/navigation";
+import { roomsPageCards } from "@/lib/data";
+import RoomCard from "./RoomCard";
 
 export const FeatureRooms = () => {
   const { language } = useLanguage();
@@ -22,9 +24,19 @@ export const FeatureRooms = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-        {/* {featuredRooms.map((room) => (
-            <RoomCard key={room.id} {...room} />
-          ))} */}
+        {roomsPageCards.slice(0, 3).map((room) => (
+          <RoomCard
+            key={room.id}
+            title={room.title[language]}
+            description={room.description[language]}
+            price={room.price[language]}
+            image={room.image}
+            guests={room.guests}
+            guestLabel={room.guests === 1 ? t.guest : t.guests}
+            detailsLabel={t.viewDetails}
+            detailHref={`/rooms/${room.detailId}`}
+          />
+        ))}
       </div>
 
       <div className="text-center">

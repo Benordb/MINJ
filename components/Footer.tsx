@@ -63,10 +63,11 @@ export const Footer = () => {
                 <MapPin size={16} /> {t.address}
               </li>
               <li className="flex items-center gap-2">
-                <Phone size={16} /> +976 70489999
+                <Phone size={16} /> {t.phoneNumber}
               </li>
               <li className="flex items-center gap-2">
-                <Mail size={16} /> minjhotel7@gmail.com
+                <Mail size={16} />
+                {t.emailAddress}
               </li>
             </ul>
           </div>
