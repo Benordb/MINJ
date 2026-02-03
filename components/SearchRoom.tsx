@@ -1,6 +1,6 @@
 "use client";
 
-import { Calendar, Users, Search } from "lucide-react";
+import { Users, Search, CalendarIcon } from "lucide-react";
 import { Button } from "./ui/button";
 import {
   Select,
@@ -13,10 +13,17 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { useTranslation } from "@/lib/i18n";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { Calendar } from "@/components/ui/calendar";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
+import { format } from "date-fns";
 
 export const SearchRoom = () => {
-  const [checkIn, setCheckIn] = useState("");
-  const [checkOut, setCheckOut] = useState("");
+  const [checkIn, setCheckIn] = useState<Date | undefined>(undefined);
+  const [checkOut, setCheckOut] = useState<Date | undefined>(undefined);
   const [guests, setGuests] = useState(2);
 
   const { language } = useLanguage();
@@ -33,30 +40,51 @@ export const SearchRoom = () => {
             <label className="block text-sm text-slate-600 mb-2">
               {t.checkIn}
             </label>
-            <div className="relative">
-              <Calendar className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
-              <input
-                type="date"
-                value={checkIn}
-                onChange={(e) => setCheckIn(e.target.value)}
-                className="w-full pl-12 pr-4 py-3 border border-slate-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500"
-              />
-            </div>
-          </div>
 
+            <Popover>
+              <PopoverTrigger asChild>
+                <Button
+                  variant="outline"
+                  className="w-full justify-start font-normal py-3 relative pl-12"
+                >
+                  <CalendarIcon className="text-slate-400" />
+                  {checkIn ? format(checkIn, "yyyy-MM-dd") : t.selectDate}
+                </Button>
+              </PopoverTrigger>
+
+              <PopoverContent className="w-auto p-0" align="start">
+                <Calendar
+                  mode="single"
+                  selected={checkIn}
+                  onSelect={setCheckIn}
+                />
+              </PopoverContent>
+            </Popover>
+          </div>
           <div>
             <label className="block text-sm text-slate-600 mb-2">
               {t.checkOut}
             </label>
-            <div className="relative">
-              <Calendar className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
-              <input
-                type="date"
-                value={checkOut}
-                onChange={(e) => setCheckOut(e.target.value)}
-                className="w-full pl-10 pr-4 py-3 border border-slate-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500"
-              />
-            </div>
+
+            <Popover>
+              <PopoverTrigger asChild>
+                <Button
+                  variant="outline"
+                  className="w-full justify-start font-normal py-3 relative pl-12"
+                >
+                  <CalendarIcon className="text-slate-400" />
+                  {checkOut ? format(checkOut, "yyyy-MM-dd") : t.selectDate}
+                </Button>
+              </PopoverTrigger>
+
+              <PopoverContent className="w-auto p-0" align="start">
+                <Calendar
+                  mode="single"
+                  selected={checkOut}
+                  onSelect={setCheckOut}
+                />
+              </PopoverContent>
+            </Popover>
           </div>
 
           <div>

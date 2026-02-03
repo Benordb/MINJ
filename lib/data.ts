@@ -1,29 +1,3 @@
-// import {
-//   Calendar,
-//   Users,
-//   Search,
-//   Wifi,
-//   Car,
-//   Coffee,
-//   Sparkles,
-//   Dumbbell,
-//   UtensilsCrossed,
-//   Star,
-// } from "lucide-react";
-// import { useTranslation } from "./i18n";
-// import { useLanguage } from "@/contexts/LanguageContext";
-// const { language } = useLanguage();
-// const t = useTranslation(language);
-
-// export const amenities = [
-//   { icon: Wifi, label: t.freeWifi },
-//   { icon: Car, label: t.parking },
-//   { icon: Coffee, label: t.breakfast },
-//   { icon: Sparkles, label: t.spaWellness },
-//   { icon: Dumbbell, label: t.fitnessCenter },
-//   { icon: UtensilsCrossed, label: t.restaurant },
-// ];
-
 export const testimonials = [
   {
     name: "Sarah Johnson",
@@ -45,123 +19,29 @@ export const testimonials = [
   },
 ];
 
-export const featuredRooms = [
-  {
-    id: "1",
-    image:
-      "https://images.unsplash.com/photo-1648766378129-11c3d8d0da05?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-    name: "Deluxe Room",
-    price: 299,
-    guests: 2,
-    size: "35 m²",
-    description:
-      "Elegant room with city views, king-size bed, and modern amenities for ultimate comfort.",
-  },
-  {
-    id: "2",
-    image:
-      "https://images.unsplash.com/photo-1702411200201-3061d0eea802?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-    name: "Executive Suite",
-    price: 499,
-    guests: 3,
-    size: "55 m²",
-    description:
-      "Spacious suite with separate living area, premium furnishings, and panoramic views.",
-  },
-  {
-    id: "3",
-    image:
-      "https://images.unsplash.com/photo-1748652252546-6bea5d896bd4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-    name: "Presidential Suite",
-    price: 899,
-    guests: 4,
-    size: "95 m²",
-    description:
-      "Ultimate luxury with master bedroom, dining area, private terrace, and butler service.",
-  },
-];
+export type LocalizedText = {
+  en: string;
+  mn: string;
+};
 
-export const roomsPageCards = [
-  {
-    id: "standard",
-    detailId: "4",
-    image: "/restorant.png",
-    guests: 1,
-    title: {
-      en: "Standard Room",
-      mn: "Стандарт өрөө",
-    },
-    description: {
-      en: "Comfortable and simply designed.",
-      mn: "Тав тухтай, энгийн зохион байгуулалттай.",
-    },
-    price: {
-      en: "140,000₮ / night",
-      mn: "140,000₮ / шөнө",
-    },
-  },
-  {
-    id: "deluxe",
-    detailId: "1",
-    image: "/restorant.png",
-    guests: 2,
-    title: {
-      en: "Deluxe Room",
-      mn: "Делюкс өрөө",
-    },
-    description: {
-      en: "More spacious, more comfort.",
-      mn: "Илүү өргөн, илүү тав тух.",
-    },
-    price: {
-      en: "180,000₮ / night",
-      mn: "180,000₮ / шөнө",
-    },
-  },
-  {
-    id: "suite",
-    detailId: "2",
-    image: "/restorant.png",
-    guests: 3,
-    title: {
-      en: "Suite Room",
-      mn: "Люкс өрөө",
-    },
-    description: {
-      en: "Top-tier luxury ambiance.",
-      mn: "Дээд зэргийн тансаг орчин.",
-    },
-    price: {
-      en: "280,000₮ / night",
-      mn: "280,000₮ / шөнө",
-    },
-  },
-  {
-    id: "suite-2",
-    detailId: "3",
-    image: "/restorant.png",
-    guests: 3,
-    title: {
-      en: "Suite Room",
-      mn: "Люкс өрөө",
-    },
-    description: {
-      en: "Top-tier luxury ambiance.",
-      mn: "Дээд зэргийн тансаг орчин.",
-    },
-    price: {
-      en: "280,000₮ / night",
-      mn: "280,000₮ / шөнө",
-    },
-  },
-];
-export const roomData = {
+export type RoomDetail = {
+  name: LocalizedText;
+  price: number;
+  images: string[];
+  description: LocalizedText;
+  size: string;
+  guests: number;
+  beds: LocalizedText;
+  bathrooms: LocalizedText;
+};
+
+export const roomData: Record<string, RoomDetail> = {
   "1": {
     name: {
       en: "Deluxe Room",
       mn: "Делюкс өрөө",
     },
-    price: 299,
+    price: 180000,
     images: [
       "https://images.unsplash.com/photo-1648766378129-11c3d8d0da05?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
       "https://images.unsplash.com/photo-1702411200201-3061d0eea802?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
@@ -187,7 +67,7 @@ export const roomData = {
       en: "Executive Suite",
       mn: "Гүйцэтгэх люкс",
     },
-    price: 499,
+    price: 280000,
     images: [
       "https://images.unsplash.com/photo-1702411200201-3061d0eea802?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
       "https://images.unsplash.com/photo-1648766378129-11c3d8d0da05?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
@@ -213,7 +93,7 @@ export const roomData = {
       en: "Presidential Suite",
       mn: "Ерөнхийлөгчийн люкс",
     },
-    price: 899,
+    price: 280000,
     images: [
       "https://images.unsplash.com/photo-1748652252546-6bea5d896bd4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
       "https://images.unsplash.com/photo-1702411200201-3061d0eea802?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
@@ -239,7 +119,7 @@ export const roomData = {
       en: "Standard Room",
       mn: "Стандарт өрөө",
     },
-    price: 199,
+    price: 140000,
     images: [
       "https://images.unsplash.com/photo-1670800050441-e77f8c82963f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
       "https://images.unsplash.com/photo-1648766378129-11c3d8d0da05?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",

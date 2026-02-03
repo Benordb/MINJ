@@ -20,12 +20,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { useTranslation } from "@/lib/i18n";
-import { roomData } from "@/lib/data";
-
-type LocalizedText = {
-  en: string;
-  mn: string;
-};
+import { roomData, type LocalizedText } from "@/lib/data";
 
 export default function RoomIdPage() {
   const params = useParams();
@@ -44,6 +39,8 @@ export default function RoomIdPage() {
 
   const getText = (value: string | LocalizedText) =>
     typeof value === "string" ? value : value[language];
+  const formatPrice = (amount: number) =>
+    new Intl.NumberFormat(language === "mn" ? "mn-MN" : "en-US").format(amount);
 
   const amenities = [
     { icon: Wifi, label: t.freeWifi },
@@ -110,7 +107,7 @@ export default function RoomIdPage() {
   }
 
   return (
-    <div>
+    <div className="mt-12">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           <div className="lg:col-span-2">
@@ -229,8 +226,8 @@ export default function RoomIdPage() {
             <div className="bg-white rounded-lg shadow-lg p-6 sticky top-24">
               <div className="mb-6">
                 <div className="flex items-baseline gap-2 mb-2">
-                  <span className="text-4xl font-serif text-slate-900">
-                    ${room.price}
+                  <span className="text-4xl text-slate-900">
+                    ₮{formatPrice(room.price)}
                   </span>
                   <span className="text-slate-600">{t.perNight}</span>
                 </div>
@@ -238,12 +235,8 @@ export default function RoomIdPage() {
               </div>
 
               <Button size="lg" className="w-full mb-3">
-                {t.bookNow}
+                <a href="tel:+97670489999">{t.bookNow}</a>
               </Button>
-
-              <button className="w-full text-center text-sm text-amber-700 hover:text-amber-800">
-                {t.checkRates}
-              </button>
 
               <div className="mt-6 pt-6 border-t border-slate-200">
                 <p className="text-sm text-slate-600 mb-2">

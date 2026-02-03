@@ -34,6 +34,7 @@ export const translations = {
     fitnessCenter: "Fitness Center",
     restaurant: "Restaurant",
 
+    selectDate: "Select date",
     checkIn: "Check In",
     checkOut: "Check Out",
     guests: "Guests",
@@ -188,6 +189,7 @@ export const translations = {
     fitnessCenter: "Фитнесс төв",
     restaurant: "Ресторан",
 
+    selectDate: "Өдөр сонгох",
     checkIn: "Орох огноо",
     checkOut: "Гарах огноо",
     guests: "Зочид",

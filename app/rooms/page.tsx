@@ -3,7 +3,7 @@ import RoomCard from "@/components/RoomCard";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { useTranslation } from "@/lib/i18n";
 import Image from "next/image";
-import { roomsPageCards } from "@/lib/data";
+import { roomData } from "@/lib/data";
 //standard
 //luxury
 // family
@@ -12,6 +12,11 @@ import { roomsPageCards } from "@/lib/data";
 export default function Rooms() {
   const { language } = useLanguage();
   const t = useTranslation(language);
+  const roomEntries = Object.entries(roomData).sort(
+    ([a], [b]) => Number(a) - Number(b),
+  );
+  const formatPrice = (amount: number) =>
+    new Intl.NumberFormat(language === "mn" ? "mn-MN" : "en-US").format(amount);
 
   return (
     <div>
@@ -45,17 +50,17 @@ export default function Rooms() {
       </div>
       <div className="max-w-7xl mx-auto p-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-          {roomsPageCards.map((room) => (
+          {roomEntries.map(([id, room]) => (
             <RoomCard
-              key={room.id}
-              title={room.title[language]}
+              key={id}
+              title={room.name[language]}
               description={room.description[language]}
-              price={room.price[language]}
-              image={room.image}
+              price={`₮${formatPrice(room.price)} ${t.perNight}`}
+              image={room.images[0]}
               guests={room.guests}
               guestLabel={room.guests === 1 ? t.guest : t.guests}
               detailsLabel={t.viewDetails}
-              detailHref={`/rooms/${room.detailId}`}
+              detailHref={`/rooms/${id}`}
             />
           ))}
         </div>
