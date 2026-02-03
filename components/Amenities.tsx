@@ -1,6 +1,6 @@
 "use client";
 
-import { Wifi, Coffee, Dumbbell, Car, Utensils } from "lucide-react";
+import { Wifi, Coffee, Car, Utensils } from "lucide-react";
 import { useTranslation } from "@/lib/i18n";
 import { useLanguage } from "@/contexts/LanguageContext";
 
@@ -11,7 +11,6 @@ export const Amenities = () => {
   const amenities = [
     { icon: Wifi, label: t.freeWifi },
     { icon: Coffee, label: t.breakfast },
-    { icon: Dumbbell, label: t.fitnessCenter },
     { icon: Car, label: t.parking },
     { icon: Utensils, label: t.restaurant },
   ];

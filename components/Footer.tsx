@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Facebook, Instagram, Phone, Mail, MapPin } from "lucide-react";
+import { ExternalLink, Phone, Mail, MapPin } from "lucide-react";
 import { useTranslation } from "@/lib/i18n";
 import { useLanguage } from "@/contexts/LanguageContext";
 
@@ -31,22 +31,22 @@ export const Footer = () => {
             </h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/#home" className="hover:text-amber-400">
+                <Link href="/" className="hover:text-amber-400">
                   {t.home}
                 </Link>
               </li>
               <li>
-                <Link href="/#rooms" className="hover:text-amber-400">
+                <Link href="/" className="hover:text-amber-400">
                   {t.roomsAndSuites}
                 </Link>
               </li>
               <li>
-                <Link href="/#about" className="hover:text-amber-400">
+                <Link href="/about" className="hover:text-amber-400">
                   {t.aboutUs}
                 </Link>
               </li>
               <li>
-                <Link href="/#contact" className="hover:text-amber-400">
+                <Link href="/contact" className="hover:text-amber-400">
                   {t.contact}
                 </Link>
               </li>
@@ -78,11 +78,11 @@ export const Footer = () => {
               {t.followUs}
             </h4>
             <div className="flex gap-4">
-              <a href="#" className="hover:text-amber-400">
-                <Facebook />
-              </a>
-              <a href="#" className="hover:text-amber-400">
-                <Instagram />
+              <a
+                href="https://www.facebook.com/people/MINJ-HOTEL-Govi-Altai/61550104662949/?mibextid=wwXIfr&rdid=odNm31QhDALcjZtV&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1HHV64npm7%2F%3Fmibextid%3DwwXIfr"
+                className="hover:text-amber-400"
+              >
+                <ExternalLink />
               </a>
             </div>
           </div>

@@ -243,7 +243,7 @@ export default function RoomIdPage() {
                   {t.needHelpBooking}
                 </p>
                 <p className="text-sm text-slate-900 font-medium">
-                  {t.call}: +1 (555) 123-4567
+                  {t.call}: (+976) 7048-9999
                 </p>
               </div>
             </div>
