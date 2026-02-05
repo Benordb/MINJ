@@ -233,11 +233,11 @@ export default function RoomIdPage() {
                 </div>
                 <p className="text-sm text-slate-500">{t.taxesIncluded}</p>
               </div>
-
-              <Button size="lg" className="w-full mb-3">
-                <a href="tel:+97670489999">{t.bookNow}</a>
-              </Button>
-
+              <a href="tel:+97670489999">
+                <Button size="lg" className="w-full mb-3 cursor-pointer">
+                  {t.bookNow}
+                </Button>
+              </a>
               <div className="mt-6 pt-6 border-t border-slate-200">
                 <p className="text-sm text-slate-600 mb-2">
                   {t.needHelpBooking}
