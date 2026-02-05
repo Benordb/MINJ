@@ -10,15 +10,14 @@ export const translations = {
     bookNow: "Book Now",
 
     // Hero Section
-    premiumHotel: "PREMIUM HOTEL EXPERIENCE",
-    heroTitleLine1: "Experience",
-    heroTitleLine2: "Luxury Like Never Before",
+    premiumHotel: "WELCOMING HOTEL EXPERIENCE",
+    heroTitleLine1: "Comfort",
+    heroTitleLine2: "Friendly service",
     bookYourStay: "Book Your Stay",
     viewRooms: "View Rooms",
 
     // Footer
-    footerDescription:
-      "Experience refined luxury and exceptional hospitality with us.",
+    footerDescription: "Comfort, friendly service. Feel at home.",
     navigation: "Navigation",
     followUs: "Follow us",
     address: "Govi-Altai, Mongolia",
@@ -166,15 +165,14 @@ export const translations = {
     bookNow: "Захиалах",
 
     // Hero Section
-    premiumHotel: "ТАНСАГ ЗОЧИД БУУДАЛ",
-    heroTitleLine1: "Тансаг байдлыг",
-    heroTitleLine2: "Шинэ түвшинд мэдэр",
+    premiumHotel: "НАЙРСАГ ЗОЧИД БУУДАЛ",
+    heroTitleLine1: "Тав тух",
+    heroTitleLine2: "Найрсаг үйлчилгээ",
     bookYourStay: "Өрөө захиалах",
     viewRooms: "Өрөөнүүд үзэх",
 
     // Footer
-    footerDescription:
-      "Тансаг зэрэглэлийн орчин, дээд зэргийн үйлчилгээ таныг хүлээж байна.",
+    footerDescription: "Тав тух, Найрсаг үйлчилгээ, Таны гэр мэт орчин",
     navigation: "Цэс",
     followUs: "Биднийг дагах",
     address: "Алтай хот, Есөнбулаг сум",

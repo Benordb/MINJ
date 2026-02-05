@@ -41,17 +41,17 @@ export const roomData: Record<string, RoomDetail> = {
       en: "Deluxe Room",
       mn: "Делюкс өрөө",
     },
-    price: 180000,
+    price: 190000,
     images: ["/roomview.jpeg", "/restorant.png", "/minj.jpg"],
     description: {
       en: "Experience refined elegance in our Deluxe Room, thoughtfully designed to provide the perfect balance of comfort and sophistication. Featuring contemporary furnishings, premium linens, and state-of-the-art amenities, this room offers a serene retreat in the heart of the city.",
       mn: "Манай Делюкс өрөө нь тав тух, дэгжин байдлын төгс тэнцвэрийг бүрдүүлсэн. Орчин үеийн тавилга, дээд зэрэглэлийн даавуу, хамгийн сүүлийн үеийн тохижилт нь хотын төвд тайван амрах орчныг бүрдүүлнэ.",
     },
-    size: "35 m²",
-    guests: 2,
+    size: "55 m²",
+    guests: 3,
     beds: {
-      en: "King-size bed",
-      mn: "Кинг хэмжээтэй ор",
+      en: "King-size bed + Sofa bed",
+      mn: "Кинг хэмжээтэй ор + буйдан ор",
     },
     bathrooms: {
       en: "1 Full bathroom",
@@ -60,20 +60,20 @@ export const roomData: Record<string, RoomDetail> = {
   },
   "2": {
     name: {
-      en: "Executive Suite",
-      mn: "Гүйцэтгэх люкс",
+      en: "Semi Suite",
+      mn: "Хагас люкс",
     },
-    price: 280000,
+    price: 170000,
     images: ["/bathroom.jpeg", "/bathroom.jpeg", "/restorant.jpeg"],
     description: {
-      en: "Our Executive Suite offers an elevated experience with separate living and sleeping areas, perfect for both business and leisure travelers. Enjoy panoramic city views, a spacious work area, and premium furnishings that create an atmosphere of understated luxury.",
-      mn: "Манай Гүйцэтгэх люкс нь зочны болон унтлагын тусдаа хэсэгтэй тул ажил хэрэг болон аялал жуулчлалын зочдод тохиромжтой. Хотын панорама харагдах цонх, өргөн ажлын хэсэг, дээд зэрэглэлийн тавилга нь дэгжин тансаг уур амьсгалыг бүрдүүлнэ.",
+      en: "Our Semi Suite offers an elevated experience with separate living and sleeping areas, perfect for both business and leisure travelers. Enjoy panoramic city views, a spacious work area, and premium furnishings that create an atmosphere of understated luxury.",
+      mn: "Манай Хагас люкс нь зочны болон унтлагын тусдаа хэсэгтэй тул ажил хэрэг болон аялал жуулчлалын зочдод тохиромжтой. Хотын панорама харагдах цонх, өргөн ажлын хэсэг, дээд зэрэглэлийн тавилга нь дэгжин тансаг уур амьсгалыг бүрдүүлнэ.",
     },
-    size: "55 m²",
-    guests: 3,
+    size: "35 m²",
+    guests: 2,
     beds: {
-      en: "King-size bed + Sofa bed",
-      mn: "Кинг хэмжээтэй ор + буйдан ор",
+      en: "King-size bed",
+      mn: "Кинг хэмжээтэй ор",
     },
     bathrooms: {
       en: "1 Luxury bathroom",
@@ -85,7 +85,7 @@ export const roomData: Record<string, RoomDetail> = {
       en: "Family Room",
       mn: "Гэр бүлийн өрөө",
     },
-    price: 180000,
+    price: 190000,
     images: ["/roomview2.png", "/bathroom.jpeg", "/minj.jpg"],
     description: {
       en: "A spacious and comfortable Family Room designed for families, featuring a cozy sleeping area, practical living space, and modern amenities to ensure a relaxing stay for both parents and children.",
